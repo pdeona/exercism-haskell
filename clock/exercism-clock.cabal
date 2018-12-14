@@ -1,0 +1,35 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: fe7d89c927f2356a9e784eaa2f23077b16adb25d571e9cb71f3f096f6ef92590
+
+name:           exercism-clock
+version:        2.3.0.8
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      Clock
+  other-modules:
+      Paths_exercism_clock
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_exercism_clock
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , exercism-clock
+    , hspec
+  default-language: Haskell2010

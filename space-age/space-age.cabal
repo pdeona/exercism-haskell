@@ -1,0 +1,35 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: cde4d9ddd64409cb6738883bcc925447c354a751109c70a319693fcb202b5b6d
+
+name:           space-age
+version:        1.1.0.5
+build-type:     Simple
+cabal-version:  >= 1.10
+
+library
+  exposed-modules:
+      SpaceAge
+  other-modules:
+      Paths_space_age
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_space_age
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , hspec
+    , space-age
+  default-language: Haskell2010
